@@ -1,8 +1,3 @@
-
-
-
-
-
 #container {
 
     perspective: 50px;
@@ -17,7 +12,6 @@
 
     opacity: 0.55;
 }
-
 
 
 #background-dot{
@@ -56,6 +50,26 @@ body {
   src: url('./polices/Barlow/Barlow-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('./polices/Roboto_Condensed/RobotoCondensed-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('./polices/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+}
+
+#neurodrop {
+    color: #15C6FF;
+    font-family: 'Roboto Bold';
+    font-size: 3vw;
+}
+
+.neurodrop-logo {
+    padding: 20%;
+}
+
 .card {
   border: 1px solid black;
 }
@@ -81,16 +95,16 @@ body {
 .draggable-menu {
     z-index:9999;
     position: fixed;
-    top: 12%;
-    left: 9%;
-    -webkit-transform: translate(-50%, -50%);
+    /*top: 12%;
+    left: 9%;*/
+    /*-webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-border-radius: 9999px;
     -moz-border-radius: 9999px;
-    border-radius: 9999px;
+    border-radius: 9999px;*/
 
 }
 
