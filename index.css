@@ -1,0 +1,215 @@
+
+
+
+
+
+#container {
+
+    perspective: 50px;
+    -webkit-perspective: 50px;
+    -moz-perspective: 50px;
+    -ms-perspective: 50px;
+
+    transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+
+    opacity: 0.55;
+}
+
+
+
+#background-dot{
+    z-index: -9999;
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dot {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 30px;
+    background-color: #4bc2f1;
+}
+
+body {
+    background: #060b14;
+    font-size: 0.7rem;
+    font-family: "Barlow Regular";
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+@font-face {
+  font-family: 'Barlow Bold';
+  src: url('./polices/Barlow/Barlow-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Barlow Regular';
+  src: url('./polices/Barlow/Barlow-Regular.ttf');
+}
+
+.card {
+  border: 1px solid black;
+}
+
+.main-menu,
+.writing-button,
+.new-button,
+.bin-button,
+.portfolio-button,
+.testimonials-button,
+.contact-button,
+.security-button,
+.profile-button,
+.reading-button,
+.general-button,
+.settings-button,
+.faq-button,
+.home-button,
+.more-button  {
+    cursor: pointer;
+}
+
+.draggable-menu {
+    z-index:9999;
+    position: fixed;
+    top: 12%;
+    left: 9%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 9999px;
+    -moz-border-radius: 9999px;
+    border-radius: 9999px;
+
+}
+
+.miniatures {
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.miniatures:hover{
+    opacity: 1;
+}
+
+#js-loop-desc{
+    color: #fff;
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.intern-scroll {
+    scrollbar-width: none;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.intern-scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+}
+
+
+#aline-pix,
+#antoine-pix,
+#fahd-pix,
+#gaspard-pix,
+#hajar-pix,
+#lucas-pix,
+#marine-pix,
+#marvin-pix,
+#melodie-pix,
+#nina-pix,
+#pauline-pix,
+#pierre-pix,
+#romain-pix,
+#aline-clone-pix,
+#antoine-clone-pix,
+#fahd-clone-pix,
+#gaspard-clone-pix,
+#hajar-clone-pix,
+#lucas-clone-pix,
+#marine-clone-pix,
+#marvin-clone-pix,
+#melodie-clone-pix,
+#nina-clone-pix,
+#pauline-clone-pix,
+#pierre-clone-pix
+ {
+    top: 0%;
+    position: fixed;
+    width: 200px;
+}
+
+
+#explain-page {
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+#explain-page > div {
+    height: inherit;
+    overflow: scroll;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 1000px;
+    color: white;
+}
+
+#explain-page > div p {
+    color: #15C6FF;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+}
+
+.box img {
+    margin-right: 20px;
+}
+
+#title-menu {
+    font-size: 1.5rem;
+}
+
+#title-menu .col-auto a {
+    color: white;
+}
+
+#title-menu .col-auto a:hover {
+    text-decoration:none;
+}
+
+.highlight-stay{
+    opacity: 1;
+}
+
+.highlight-hover {
+    opacity: 0.5;
+}
+
+.highlight-hover:hover{
+    opacity: 1;
+}
+
+table {
+    text-align: center;
+}
