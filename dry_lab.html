@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="col-sm-2 draggable-menu-container">
-                <svg class="draggable-menu col-sm-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 792 792" id="draggable-menu">
+                <svg class="draggable-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 792 792" id="draggable-menu">
                     <defs>
                         <path class="path-1" d="M45 67.9c0 2.3 1.9 4.1 4.2 4.1a4.1 4.1 0 1 0 0-8.3 4.1 4.1 0 0 0-4.1 4.2zm6 0c0 1-.8 1.7-1.8 1.7s-1.8-.7-1.8-1.7.8-1.8 1.8-1.8 1.8.7 1.8 1.8z"/>
                     </defs>
@@ -482,7 +482,7 @@
             return (v * h) / 100;
         }
         $(".draggable-menu-container").css("height",  $( ".draggable-menu" ).height());
-        $("#explain-page").css("height",  vh(99) - $( ".draggable-menu" ).height());
+        $("#explain-page").css("height",  vh(100) - $( ".draggable-menu" ).height());
 
         // init controller
         var controller = new ScrollMagic.Controller({container: "#explain-page"});

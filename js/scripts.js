@@ -295,7 +295,7 @@ $( ".draggable-menu" ).draggable(
 				$(event.target).data('dragging', false);
 			}, 0.01);
 		},
-		containment: 'window',
+		containment: 'body',
 		scroll: false,
 		drag: function(){
 			$(this).css({

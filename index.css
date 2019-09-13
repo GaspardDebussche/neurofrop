@@ -36,7 +36,7 @@ body {
     font-size: 0.7rem;
     font-family: "Barlow Regular";
     background-repeat: no-repeat;
-    overflow: hidden;
+
 
 }
 
@@ -61,13 +61,17 @@ body {
 }
 
 #neurodrop {
-    color: #15C6FF;
+    color: #3fe8ff;
     font-family: 'Roboto Bold';
     font-size: 3vw;
 }
 
 .neurodrop-logo {
     padding: 20%;
+}
+
+.home-init-screen {
+    height: 100vh;
 }
 
 .card {
@@ -94,7 +98,7 @@ body {
 
 .draggable-menu {
     z-index:9999;
-    position: fixed;
+    /*position: fixed;*/
     /*top: 12%;
     left: 9%;*/
     /*-webkit-transform: translate(-50%, -50%);
@@ -188,7 +192,7 @@ body {
 }
 
 #explain-page > div p {
-    color: #15C6FF;
+    color: #3fe8ff;
 }
 
 .box {

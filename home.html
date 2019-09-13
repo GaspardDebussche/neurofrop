@@ -16,15 +16,15 @@
 </head>
 <body>
 
-<div id="background-dot">
-  <div id="container">
-  </div>
+<div id="vanta">
+
 </div>
 
 <section class="container-fluid">
-  <div class="row">
-    <div class="col-sm-2">
-      <svg class="draggable-menu col-sm-2" style="left:50%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 792 792" id="draggable-menu">
+  <div class="row align-items-center home-init-screen">
+    <div class="col"></div>
+    <div class="col-2 align-self-center">
+      <svg class="draggable-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 792 792" id="draggable-menu">
         <defs>
           <path class="path-1" d="M45 67.9c0 2.3 1.9 4.1 4.2 4.1a4.1 4.1 0 1 0 0-8.3 4.1 4.1 0 0 0-4.1 4.2zm6 0c0 1-.8 1.7-1.8 1.7s-1.8-.7-1.8-1.7.8-1.8 1.8-1.8 1.8.7 1.8 1.8z"/>
         </defs>
@@ -151,11 +151,23 @@
 
       </svg>
     </div>
+    <div class="col"></div>
     </div>
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+
+<script src="js/three.r92.min.js"></script>
+<script src="js/vanta.net.min.js"></script>
+<script>
+  VANTA.NET({
+    el: "#vanta",
+    color: 0x3fe8ff,
+    backgroundColor: 0x0,
+    points: 20.00
+  })
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script>
