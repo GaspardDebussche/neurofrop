@@ -32,12 +32,25 @@
 }
 
 body {
-    background: #060b14;
+    background: #000000;
     font-size: 0.7rem;
     font-family: "Barlow Regular";
     background-repeat: no-repeat;
+}
 
+/*#vanta {
+    height: 100vh;
+}*/
 
+.parallaxParent {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallaxParent > * {
+    height: 200%;
+    position: relative;
+    top: -100%;
 }
 
 @font-face {
@@ -67,7 +80,8 @@ body {
 }
 
 .neurodrop-logo {
-    padding: 20%;
+    width: 5rem;
+    padding: 1%;
 }
 
 .home-init-screen {
@@ -231,3 +245,35 @@ body {
 table {
     text-align: center;
 }
+
+
+#title {
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo-header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.project-name {
+    color: #3fe8ff;
+    font-family: 'Roboto Bold';
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 7%;
+    margin-left: 5%;
+    z-index: 3;
+}
+
+.typewrite > .wrap { border-right: 0.08em solid #fff}

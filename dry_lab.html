@@ -10,8 +10,11 @@
         <link rel="stylesheet" href='bootstrap.min.css'>
 
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href='css/ScrollMagic.css'>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
     </head>
     <body>
 
@@ -22,14 +25,10 @@
 
     <section class="container-fluid">
         <div class="row align-items-center justify-content-between">
-            <div class="col-sm-3">
-                <div class="row align-items-center">
-                    <div class="col-sm-4">
-                        <img src="images/logo_neurodrop_blanc.png" class="img-fluid neurodrop-logo">
-                    </div>
-                    <div class="col-sm-auto">
-                        <h1 id="neurodrop">NeuroDrop</h1>
-                    </div>
+            <div class="col-sm-auto">
+                <div class="logo-header">
+                    <img src="images/logo_neurodrop_blanc.png" class="neurodrop-logo">
+                    <span class="project-name">NeuroDrop</span>
                 </div>
             </div>
             <div class="col-sm-2 draggable-menu-container">
@@ -482,7 +481,7 @@
             return (v * h) / 100;
         }
         $(".draggable-menu-container").css("height",  $( ".draggable-menu" ).height());
-        $("#explain-page").css("height",  vh(100) - $( ".draggable-menu" ).height());
+        $("#explain-page").css("height",  vh(99) - $( ".draggable-menu" ).height());
 
         // init controller
         var controller = new ScrollMagic.Controller({container: "#explain-page"});
@@ -522,7 +521,6 @@
             $(this).promise().done(function() {
                 $(this).removeClass('highlight-hover');
                 $(this).addClass("highlight-stay");
-                console.log('yoyoyo')
             })
         });
 
