@@ -13,9 +13,62 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href='css/ScrollMagic.css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
+<div id="menu-container"></div>
+
+
+<section id="right-menu">
+  <div class="nav">
+    <ul class="radial-nav">
+      <li data-content="team"><a>TEAM</a></li>
+      <li data-content="project"><a>PROJECT</a></li>
+      <li data-content="wet-lab"><a>WET LAB</a></li>
+      <li data-content="dry-lab"><a>DRY LAB</a></li>
+      <li data-content="results"><a>RESULTS</a></li>
+      <li data-content="parts"><a>PARTS</a></li>
+      <li data-content="human-practices"><a>HUMAN PRACTICES</a></li>
+      <li data-content="awards"><a>AWARDS</a></li>
+      <li class="menu"><span class="icon-menu"></span></li>
+    </ul>
+  </div>
+  <section class="content">
+    <article class="item" id="team">
+      <h1>Grunt: the task runner</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+    </article>
+    <article class="item" id="project">
+      <h1>Jade: A Node templating engine</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+    </article>
+    <article class="item" id="wet-lab">
+      <h1>CSS3</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+    </article>
+    <article class="item" id="dry-lab">
+      <h1>GIT: Version control</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+    </article>
+    <article class="item" id="results">
+      <h1>GULP: An other task runner</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+    </article>
+    <article class="item" id="parts">
+      <h1>YO</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+    </article>
+    <article class="item" id="human-practices">
+      <h1>JS</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+    </article>
+    <article class="item" id="awards">
+      <h1>JS</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+    </article>
+  </section>
+</section>
 
 <div id="title">
   <div class="logo-header">
@@ -24,18 +77,9 @@
   </div>
 </div>
 
+<div id="vanta"></div>
 
-<h1>
-  <a href="" class="typewrite" data-period="2000" data-type='[ "NeuroDrop", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-    <span class="wrap"></span>
-  </a>
-</h1>
-<div id="parallax2" class="parallaxParent">
-  <div id="vanta3"></div>
-</div>
-
-
-<section id="vanta" class="container-fluid">
+<section class="container-fluid">
   <div class="row align-items-center home-init-screen">
     <div class="col"></div>
     <div class="col-2 align-self-center">
@@ -196,6 +240,7 @@
   })
 </script>
 
+<script src="js/left-menu.js"></script>
 <script>
 
 
@@ -277,13 +322,13 @@
 
   var controller = new ScrollMagic.Controller();
   // build tween
-  var tween1 = TweenMax.staggerTo("#title", 2, {left: 0, top: 0, x:0, y:0, ease: Back.Linear}, 0.15);
+  var tween1 = TweenMax.staggerTo("#title", 2, {left: 0, top: 0, x:0, y:0, ease: Back.Sine}, 0.15);
 
   //  TweenMax.set("#title",{x:"-50%",y:"-50%"});
 
   //var tween2 = TweenMax.to("#title", 0.5, {x:"+=50", y:"+=50"});
   // build scene
-  var scene1 = new ScrollMagic.Scene({triggerElement: "body", offset: 10, duration: window.innerHeight + 30, triggerHook:0})
+  var scene1 = new ScrollMagic.Scene({triggerElement: "body", duration: window.innerHeight + 30, triggerHook:0})
   //.setPin("#title", {pushFollowers: false})
           .setTween(tween1)
           //.setTween(tween2)
@@ -306,6 +351,7 @@
   /**new ScrollMagic.Scene({triggerElement: "#parallax2"})
    .setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
    .addTo(controller2);*/
+
 
 </script>
 

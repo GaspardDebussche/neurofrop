@@ -295,9 +295,11 @@ $( ".draggable-menu" ).draggable(
 				$(event.target).data('dragging', false);
 			}, 0.01);
 		},
-		containment: 'body',
+		containment: "#menu-container",
+		zIndex: 9999,
 		scroll: false,
 		drag: function(){
+			$(this).draggable("option", "zIndex", 9999);
 			$(this).css({
 				'transform' : 'translate(0,0)',
 				'-webkit-transform' : 'translate(0,0)',

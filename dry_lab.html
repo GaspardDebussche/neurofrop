@@ -13,17 +13,63 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href='css/ScrollMagic.css'>
 
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
     </head>
     <body>
-
-    <div id="background-dot">
+    <!--<div id="background-dot">
         <div id="container">
         </div>
-    </div>
+    </div>-->
+    <section id="right-menu">
+        <div class="nav">
+            <ul class="radial-nav">
+                <li data-content="team"><a>TEAM</a></li>
+                <li data-content="project"><a>PROJECT</a></li>
+                <li data-content="wet-lab"><a>WET LAB</a></li>
+                <li data-content="dry-lab"><a>DRY LAB</a></li>
+                <li data-content="results"><a>RESULTS</a></li>
+                <li data-content="parts"><a>PARTS</a></li>
+                <li data-content="human-practices"><a>HUMAN PRACTICES</a></li>
+                <li data-content="awards"><a>AWARDS</a></li>
+                <li class="menu"><span class="icon-menu"></span></li>
+            </ul>
+        </div>
+        <section class="content">
+            <article class="item" id="team">
+                <h1>Grunt: the task runner</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+            </article>
+            <article class="item" id="project">
+                <h1>Jade: A Node templating engine</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+            </article>
+            <article class="item" id="wet-lab">
+                <h1>CSS3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+            </article>
+            <article class="item" id="dry-lab">
+                <h1>GIT: Version control</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+            </article>
+            <article class="item" id="results">
+                <h1>GULP: An other task runner</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+            </article>
+            <article class="item" id="parts">
+                <h1>YO</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+            </article>
+            <article class="item" id="human-practices">
+                <h1>JS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+            </article>
+            <article class="item" id="awards">
+                <h1>JS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ad laudantium ullam nobis magni, molestiae, nisi doloribus fugiat quam, quo odio ex sequi eum recusandae tempore optio! Veniam, mollitia soluta.</p>
+            </article>
+        </section>
+    </section>
 
-    <section class="container-fluid">
+    <section class="container-fluid full-page">
         <div class="row align-items-center justify-content-between">
             <div class="col-sm-auto">
                 <div class="logo-header">
@@ -162,91 +208,330 @@
             <div class="col-sm-auto" id="title-menu">
                 <div class="row justify-content-end">
                     <div class="col-auto">
-                        <a href="#ewod" class="highlight-stay">
-                        EWOD
+                        <a href="#hardware" class="highlight-stay">
+                        Hardware
                         </a>
                     </div>
                     <div class="col-auto">
-                        <a href="#pipette" class="highlight-hover">
-                        Pipette
+                        <a href="#software" class="highlight-hover">
+                        Software
                         </a>
                     </div>
                     <div class="col-auto">
-                        <a href="#temperature" class="highlight-hover">
-                        Temperature
-                        </a>
-                    </div>
-                    <div class="col-auto">
-                        <a href="#light-detector" class="highlight-hover">
-                        Light Detector
-                        </a>
-                    </div>
-                    <div class="col-auto">
-                        <a href="#command-board" class="highlight-hover">
-                        Command Board
-                        </a>
-                    </div>
-                    <div class="col-auto">
-                        <a href="#motors" class="highlight-hover">
-                            Motors
+                        <a href="#model" class="highlight-hover">
+                        Model
                         </a>
                     </div>
                 </div>
             </div>
             </div>
-        <div class="row">
-            <div class="col-sm-12" id="explain-page">
-                <div class="col-sm-12 mr-2" id="ewod">
-                    <h1>EWOD</h1>
-                    <p>First of all, what does EWOD mean? EWOD stands for Electrowetting On  Dielectric. This is a way to move small drops over a dielectric (insulating) plate. If you want to learn theory more about it let check over there. #TODO(link)</p>
-                    <p>To sum up,  EWOD is a way to <strong>move small volumes</strong> such as tears. By applying a <strong>high voltage</strong> on pads under the drops the drop is distorted toward the  electrified up to a point it easier for it to move onto the pad than to stay on it’s own pad.</p>
-                    <p>We chose <strong>EWOD</strong> because it is a <strong>lossless solution of moving droplets</strong>. Indeed there is always a loss while pipetting a solution and, as we are working with small quantities, we cannot afford these losses. Moreover we wanted to develop an <strong>automated devices</strong> which is possible thanks to EWOD.</p>
-                    <h3>How to make an electrowetting plate ?</h3>
-                    <p>
-                        In order to have a fully controllable electrowetting plate, a component capable of activating (enabling or disabling) pads one by one is needed. It is the HV507 of Microchip, or it’s soft surname according to it’s datasheet, 64-Channel Serial-to-Parallel Converter with High-Voltage Push-Pull Outputs,  that have been chosen for several reasons :
-                    </p>
-                    <div class="box">
-                        <img src="images/ewod.png" />
-                        <p>
-                            <ol>
-                                <li>64 channel High Voltage outputs</li>
-                                <li>Up to 300V Output Voltage</li>
-                                <li>Latched Data Outputs</li>
-                                <li>Output Polarity and Blanking</li>
-                                <li>Chainable</li>
-                            </ol>
-                        </p>
+        <div class="row" id="explain-page">
+            <div class="offset-1 col-sm-11 p-5">
+                <div class="container-fluid" id="hardware">
+                    <div class="row">
+                        <div class="col-sm-2 internal-menu">
+                            <a data-toggle="collapse" href="#ewod-menu" role="button" aria-expanded="true" aria-controls="ewod-menu">
+                                <h3>EWOD</h3>
+                            </a>
+                            <div class="collapse" id="ewod-menu">
+                                <h5>Why Ewod?</h5>
+                                <h5>How to make an electrowetting plate?</h5>
+                                <h5>How to pilot the HV 507?</h5>
+                                <h5>What about the dielectric?</h5>
+                            </div>
+                            <a data-toggle="collapse" href="#pipette-menu" role="button" aria-expanded="false" aria-controls="pipette-menu">
+                                <h3>Pipette</h3>
+                            </a>
+                            <div class="collapse" id="pipette-menu">
+                                <h5>What we started with</h5>
+                                <h5>How the pipette works</h5>
+                                <h5>What we did to automatize the pipetting</h5>
+                                <h5>Algorithm to automate a pipette</h5>
+                            </div>
+                            <a data-toggle="collapse" href="#temperature-menu" role="button" aria-expanded="false" aria-controls="temperature-menu">
+                                <h3>Temperature</h3>
+                            </a>
+                            <div class="collapse" id="temperature-menu">
+                                <h5>Why Ewod?</h5>
+                                <h5>How to make an electrowetting plate?</h5>
+                                <h5>How to pilot the HV 507?</h5>
+                                <h5>What about the dielectric?</h5>
+                            </div>
+                            <a data-toggle="collapse" href="#light-detector-menu" role="button" aria-expanded="false" aria-controls="light-detector-menu">
+                                <h3>Light Detector</h3>
+                            </a>
+                            <div class="collapse" id="light-detector-menu">
+                                <h5>Why Ewod?</h5>
+                                <h5>How to make an electrowetting plate?</h5>
+                                <h5>How to pilot the HV 507?</h5>
+                                <h5>What about the dielectric?</h5>
+                            </div>
+                            <a data-toggle="collapse" href="#command-board-menu" role="button" aria-expanded="false" aria-controls="command-board-menu">
+                                <h3>Command Board</h3>
+                            </a>
+                            <div class="collapse" id="command-board-menu">
+                                <h5>Why Ewod?</h5>
+                                <h5>How to make an electrowetting plate?</h5>
+                                <h5>How to pilot the HV 507?</h5>
+                                <h5>What about the dielectric?</h5>
+                            </div>
+                            <a data-toggle="collapse" href="#motors-menu" role="button" aria-expanded="false" aria-controls="motors-menu">
+                                <h3>Motors</h3>
+                            </a>
+                            <div class="collapse" id="motors-menu">
+                                <h5>Why Ewod?</h5>
+                                <h5>How to make an electrowetting plate?</h5>
+                                <h5>How to pilot the HV 507?</h5>
+                                <h5>What about the dielectric?</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 internal-text">
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-12 text-center">
+                                    <h1>EWOD Plate</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-7 mb-sm-2">
+                                    <h3>Why EWOD?</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>First of all, what does EWOD mean? EWOD stands for Electrowetting On  Dielectric. This is a way to move small drops over a dielectric (insulating) plate. If you want to learn theory more about it let check over there. #TODO(link)</p>
+                                    <p>To sum up,  EWOD is a way to <strong>move small volumes</strong> such as tears. By applying a <strong>high voltage</strong> on pads under the drops the drop is distorted toward the  electrified up to a point it easier for it to move onto the pad than to stay on it’s own pad.</p>
+                                    <p>We chose <strong>EWOD</strong> because it is a <strong>lossless solution of moving droplets</strong>. Indeed there is always a loss while pipetting a solution and, as we are working with small quantities, we cannot afford these losses. Moreover we wanted to develop an <strong>automated devices</strong> which is possible thanks to EWOD.</p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/electo-mouillage.gif" class="img-fluid rounded" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-7 mb-sm-2">
+                                    <h3>How to make an electrowetting plate?</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7">
+                                    <p>
+                                        In order to have a fully controllable electrowetting plate, a component capable of activating (enabling or disabling) pads one by one is needed. It is the HV507 of Microchip, or it’s soft surname according to it’s datasheet, 64-Channel Serial-to-Parallel Converter with High-Voltage Push-Pull Outputs,  that have been chosen for several reasons :
+                                    </p>
+                                    <p>
+                                        <ol>
+                                            <li>64 channel High Voltage outputs</li>
+                                            <li>Up to 300V Output Voltage</li>
+                                            <li>Latched Data Outputs</li>
+                                            <li>Output Polarity and Blanking</li>
+                                            <li>Chainable</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/ewod.png" class="img-fluid rounded" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>
+                                        Which  in substance mean it can deliver a high tension over 64 pads, can be piloted thanks to an arduino, can memorise it’s outputs, has an easy way on blanking it’s outputs and can be chained. The last point is very important in our case because the design of the electrowetting plate is this one :
+                                    </p>
+                                    <p>
+                                        Each color represent a different HV507. Indeed, to automate as many processes as possible, a big number of pads is needed. Blue and Red zone correspond to the zone that are <a href="#temperature">temperature controlled</a>. The orange one is for light detection and finally green and yellow one are for storage of the drops when they do not need to be at a set temperature nor need their brightness to be measured.
+                                    </p>
+                                    <p>
+                                        As you may see, each pad has a number that unique and constructed as so : “x.y” x (ranging from 1 to 5) is the identifier of the chip in the chain and y (ranging from 1 to 64) correspond to the output and thus the pad on the chip.
+                                    </p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/ewod_design.png" class="img-fluid rounded" style="padding: 10%;"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-2">
+                                <div class="col-sm-7">
+                                    <h3>How to pilot the HV 507?</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>As the functional block diagram from the datasheet shows it, data flows in from DIOA to DIOB through the 64bits static shift register. The data are then shifted from the static register to the latches (mini memory) on a rising edge of *LATCH ENABLE*. Finally the outputs are *calculated* based on the content of the latches and depending of the *BLANKING* and *POLARITY* inputs. The first one is used to reset all the outputs and the *POLARITY* input is used in order to say if a *0* correspond to a high or a low voltage.</p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/ewod_functional_diagram.png" class="img-fluid rounded"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>Finally, all theses component have been routed onto Kicad in order to give the following result :</p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="text-center">
+                                                <img src="images/ewod-neurodrop-face.png" class="img-fluid rounded"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="text-center">
+                                                <img src="images/ewod_neurodrop_3d.png" class="img-fluid rounded"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-2">
+                                <div class="col-sm-7">
+                                    <h3>What about the dielectric?</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>As you may now, water is <i>most of the time</i> conductive, which mean that if a drop overlap 2 pads, current would flow through as the drop would close the circuit which is not the effect wanted.</p>
+                                    <p><strong>Dielectric</strong> is used as a <strong>protective layer</strong> over copper pads. However, this protective layer must have some particular <strong>properties</strong>:
+                                        <ul>
+                                            <li>As the capacitive effect depend of the square of the distance between the drop and the copper pads, the dielectric must be as thin as possible.</li>
+                                            <li>The drops must glide as easily as possible onto the surface. In other words, the friction force between the drop and the dielectric must be as low as possible because this mean the drop will need less energy to move.</li>
+                                        </ul>
+                                    </p>
+                                    <p>These are the reasons why we chose cellophane paper, which is really thin and cheap, as a dielectric. Moreover, we coated it with some water repellent such as Rain-X. Finally a thin layer of nut oil is used to easen the gliding of the drop.</p>
+                                </div>
+                            </div>
+                            <div class="row mt-sm-5 mb-sm-5 end-section">
+                            </div>
+                            <div class="row mt-sm-5 mb-sm-5">
+                                <div class="col-sm-7 text-center">
+                                    <h1>The Pipette</h1>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>One of the most time-consuming tasks in the lab is to pipette samples. As this action is also paramount for the success of any operation, we have decided to automate it. We proceeded in a similar fashion than the 2018 iGEM Grenoble team, but we went a little further by separating the command of the pipette from the pipetting module.</p>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-2">
+                                <div class="col-sm-7">
+                                    <h3>What we started with</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>As said in the introduction, we based the automation of the pipette on last year’s iGEM Grenoble team. We took the same device as they did: a BioHit eLine pipette. Then we just added an electronic device that could simulate the press of a button.</p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/pipette-eline.jpg" class="img-fluid rounded" style="height: 300px;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>A button is basically a wire that can be connected or disconnected by pressing it down. When we press the button, the difference of potential before and after the button is pressed, is zero (V2-V1=0), but when the button is not pressed the difference of potential is not zero (its value depends on the rest of the circuit).</p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/interruptor-schema.png" class="img-fluid rounded" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>To simulate the press of a button, the idea is then to replace the buttons by an electronic component that could be switched on and off with a command board (the Arduino). By measuring the potentials on the pipette, we saw that for each button, one of the terminals was at ground potential. There are then two ways to command the pipette: either we shortcut the two terminals, or we just command the tension on the button’s terminal that is not to ground. Last year’s team decided to go with the first option. The main downside of this solution is that we need two times more cables (two cables for every button). The solution of imposing a voltage only requires one cable per button, and this is the main reason why we went with this option.</p>
+                                    <p>The tension we need to impose is either the ground’s tension, or another tension (provided it is superior to half of the power tension of the pipette). In our case we just had to impose either 0V or 5V compared to GND. Those two tensions are natively accessible on the Arduino board.</p>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>We decided to control the tensions sent to control the buttons through an electronic device called an optocoupler with numerical output: the H11L1. This piece of technology is commanded via the arduino and returns either 5V or 0V.  Here is one H11L1:</p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/numerical_otocoupler.jpg" class="img-fluid rounded" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>On the final board, we are using seven of them to control the seven buttons of the pipette:</p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/optocoupler-final-pcb.jpg" class="img-fluid rounded" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>Each chip is connected to two resistors. One of those resistors is meant to protect the device (the 1kΩ resistor) and the other one is called a “pull-up resistor” (the 270Ω resistor). A pull-up resistor (or pull-down resistor, depending on what it is connected to) is a resistor connected between a cable which tension can vary and a point at a fixed tension. In our case, it connects the output of the optocoupler to 5V. When the output is not commanded, no current flows in the resistor and the output of the optocoupler is therefore 5V.</p>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-2">
+                                <div class="col-sm-7">
+                                    <h3>How the pipette works</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>The pipette is a device with two main parts: an electronic board and a motor. The electronic board controls the pipette and acts as the main interface between the user and the pipetting mechanism. It is composed of a screen and 8 buttons (one of them being behind the pipette, and therefore invisible on figure 1). </p>
+                                    <p>The user starts by reinitializing the pipette by pressing one of the two “tip” buttons. Then he selects the volume he wants to pipette using the buttons, and then he presses the start button (in blue), the same button is used to pipette and release the liquide pipetted. At the end of the experiment, the user ejects the tip by pressing once again on the “tip” button. </p>
+                                    <p>The command board detects each time a button is pressed and activates the motor to pipette or eject the right amount of fluid. In order to control the pipetted volume, the pipette uses a crenellated wheel. This wheel is placed over a LED fixed to the motor, and turns in front of two phototransistors on the command board. The signal received is then transcribed into steps for the command board so that the pipette knows precisely the amount of solution it has pipetted. </p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/pipette_bloc_moteur.png" class="img-fluid rounded" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-2">
+                                <div class="col-sm-7">
+                                    <h3>What we did to automatize the pipetting</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>As we mentioned earlier, we can replace all the buttons by optocouplers. This allows us to automate the pressing of the buttons. </p>
+                                    <p>We also decided to separate the electronic board of the pipette from the motor so it would be easier for the motor block to move. In order to do this, we had to desolder the phototransistors behind the electronic board of the pipette and create a secondary board where to put the phototransistors, that would then sit right above the crenned wheel and the LED. </p>
+                                    <p>This being done, we designed a new case both to protect the motor and to fix it securely to a rail that moves vertically.</p>
+                                </div>
+                                <div class="col-sm-5 align-self-center">
+                                    <div class="text-center">
+                                        <img src="images/montage-pipette-arduino.png" class="img-fluid rounded" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>In order to move the pipette, we will use a mechanism that will transform the movement of a motor into a linear movement. The movement is transformed from a circular movement to a linear one thanks to a screw-nut mechanism. </p>
+                                    <p>In order to make the movement steadier, we added two bars to guide it.</p>
+                                    <p>The pipette will be fixed both to the rails and the screw via a nut, thus allowing it to move only in one direction.</p>
+                                    <p>More information on guiding the pipette will be given on the “structure” part of this wiki.</p>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-2">
+                                <div class="col-sm-7">
+                                    <h3>Algorithm to automate a pipette</h3>
+                                </div>
+                            </div>
+                            <div class="row mb-sm-5">
+                                <div class="col-sm-7 align-self-center">
+                                    <p>In order to control the pipette, we have first to identify the different actions performed to pipette a sample. This protocol will then be translated into a sequence of actions that the hardware will perform when the order is given by the software.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        Which  in substance mean it can deliver a high tension over 64 pads, can be piloted thanks to an arduino, can memorise it’s outputs, has an easy way on blanking it’s outputs and can be chained. The last point is very important in our case because the design of the electrowetting plate is this one :
-                    </p>
-                    <img src="images/ewod_design.png" />
-                    <p>
-                        Each color represent a different HV507. Indeed, to automate as many processes as possible, a big number of pads is needed. Blue and Red zone correspond to the zone that are <a href="#temperature">temperature controlled</a>. The orange one is for light detection and finally green and yellow one are for storage of the drops when they do not need to be at a set temperature nor need their brightness to be measured.
-                    </p>
-                    <p>
-                        As you may see, each pad has a number that unique and constructed as so : “x.y” x (ranging from 1 to 5) is the identifier of the chip in the chain and y (ranging from 1 to 64) correspond to the output and thus the pad on the chip.
-                    </p>
-                    <h3>How to pilot the HV 507?</h3>
-                    <img src="images/ewod_functional_diagram.png" />
-                    <p>As the functional block diagram from the datasheet shows it, data flows in from DIOA to DIOB through the 64bits static shift register. The data are then shifted from the static register to the latches (mini memory) on a rising edge of *LATCH ENABLE*. Finally the outputs are *calculated* based on the content of the latches and depending of the *BLANKING* and *POLARITY* inputs. The first one is used to reset all the outputs and the *POLARITY* input is used in order to say if a *0* correspond to a high or a low voltage.</p>
-                    <img src="images/ewod-neurodrop-face.png" />
-                    <img src="images/ewod_neurodrop_3d.png" />
-                    <h3>What about the dielectric?</h3>
-                    <p>As you may now, water is <i>most of the time</i> conductive, which mean that if a drop overlap 2 pads, current would flow through as the drop would close the circuit which is not the effect wanted. </p>
-                    <p>
-                        <strong>Dielectric</strong> is used as a protective layer over copper pads. However, this protective layer must have some particular properties:
-                        <p>- As the capacitive effect depend of the square of the distance between the drop and the copper pads, the dielectric must be as thin as possible.</p>
-                        <p>- The drops must glide as easily as possible onto the surface. In other words, the friction force between the drop and the dielectric must be as low as possible because this mean the drop will need less energy to move.</p>
-                    </p>
-                    <p>These are the reasons why we chose cellophane paper, which is really thin and cheap, as a dielectric. Moreover, we coated it with some water repellent such as Rain-X. Finally a thin layer of nut oil is used to easen the gliding of the drop.</p>
                 </div>
-                <div class="col-sm-12 mr-2" id="pipette">
-                    <h1>The Pipette</h1>
+                <div class="col-sm-12" id="software">
+                    <h2>The Pipette</h2>
                     <p>One of the most time-consuming tasks in the lab is to pipette samples. As this action is also paramount for the success of any operation, we have decided to automate it. We proceeded in a similar fashion than the 2018 iGEM Grenoble team, but we went a little further by separating the command of the pipette from the pipetting module. </p>
                     <h3>What we started with</h3>
                     <p>As said in the introduction, we based the automation of the pipette on last year’s iGEM Grenoble team. We took the same device as they did: a BioHit eLine pipette. Then we just added an electronic device that could simulate the press of a button.</p>
-                    <img src="images/pipette-eline.jpg" class="img-thumbnail" />
+                    <img src="images/pipette-eline.jpg" class="img-fluid rounded" />
                     <p>A button is basically a wire that can be connected or disconnected by pressing it down. When we press the button, the difference of potential before and after the button is zero (V2-V1=0), but when the button is not pressed the difference of potential is not zero (its value depends on the rest of the circuit). </p>
                     <img src="images/interruptor-schema.png" />
                     <p>To simulate the press of a button, the idea is then to replace the buttons by an electronic component that could be switched on and off with a command board (the Arduino). By measuring the potentials on the pipette, we saw that for each button, one of the terminals was at ground’s potential. There are then two ways to command the pipette: either we shortcut the two terminals, or we just command the tension on the button’s terminal that is not to ground. Last year’s team decided to go with the first option. The main downside of this solution is that we need two times more cables (two cables for every button). The solution of imposing a voltage only requires one cable per button, and this is the main reason why we went with this option.</p>
@@ -282,8 +567,8 @@
                             </tr>
                     </table>
                 </div>
-                <div class="col-sm-12 mr-2" id="temperature">
-                    <h1>Temperature Control</h1>
+                <div class="col-sm-12" id="model">
+                    <h2>Temperature Control</h2>
                     <p>To ensure that the bacteria do their job in detecting the biomarker, they need to be in a temperature controlled medium. The protocols we are using, require a constant pre-fixed temperature, therefore, we are going to control the temperature of the EWOD plate on which the experiments take place.</p>
                     <h3>Control Process</h3>
                     <img src="images/control_process.png" />
@@ -305,8 +590,8 @@
                     <h5>Results</h5>
                     <img src="images/temperature_control_results.png">
                 </div>
-                <div class="col-sm-12 mr-2" id="light-detector">
-                    <h1>The Light Detector</h1>
+                <div class="col-sm-12" id="light-detector">
+                    <h2>The Light Detector</h2>
                     <p>The main part of the project is to detect the light emitted by bacteria which bioluminescence is activated when the solution they are in contains the biomarker they must detect. As the signal emitted is expected to be very low, the detector used must detect light with a very high precision. The usual method to do this is to use an electronic device called a photomultiplier. </p>
                     <h3>Photomultipliers</h3>
                     <p>The evolution of semiconductor physics has led to the creation of similar devices in their characteristics: the Silicon Photomultipliers (SiPM). Those devices are usually much cheaper than the tube photomultipliers (the one used costs around $60). Another advantage of using this kind of device is their size: a SiPM usually presents itself as a square with sides of a few millimeters. </p>
@@ -338,8 +623,8 @@
 
 
                 </div>
-                <div class="col-sm-12 mr-2" id="command-board">
-                    <h1>Command Board</h1>
+                <div class="col-sm-12" id="command-board">
+                    <h2>Command Board</h2>
                     <p>The hardware we have made during this project deals with a lot of individual components, all electronic, that are piloted via an Arduino Mega. In most projects using this kind of device, PCB’s called “Shields” are developed to simplify the command of the various elements and to reduce the space taken by the electronic part. </p>
                     <h3>Developing the command board</h3>
                     <p>The goal of the command board is to command a series of individual components with a unique command board. The first thing to do is therefore to command each individual components separately. This is done amongst other things using breadboards. Here for example we are controlling the pipette individually using a breadboard and an Arduino Uno (it is another command board that works just like the Arduino Mega but has less pins). </p>
@@ -409,8 +694,8 @@
                     <img src="images/command_board_final.jpg">
                     <p>The real board is positioned over the Arduino Mega and the two drivers are also placed where they must, that is why there is a slight difference between the 3D model and the real board.</p>
                 </div>
-                <div class="col-sm-12 mr-2" id="motors">
-                    <h1>Motors</h1>
+                <div class="col-sm-12" id="motors">
+                    <h2>Motors</h2>
                     <p>In order to move the pipette and the plate, we have decided to go with a system of screw-nut that is commanded via motors. The motors used in the prototype are step-by-step motors. That means that we specify their position via the number of steps they have to turn (each step is a fraction of a turn). The motors that we are using are the NEMA 17 motors, which are very affordable and easy to work with. Each motor is controlled via a DRV 8825 module. This module is also very affordable and is easily controlled with an Arduino.</p>
                     <h3>The step motor</h3>
                     <p>A step motor is a device that allows an axis (the rotor) to turn inside another piece (the stator) by increments.
@@ -461,30 +746,48 @@
         </div>
     </section>
 
+    <div id="menu-container"></div>
 
 
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="bootstrap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
 
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/velocity.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/debug.addIndicators.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-
+<script src="js/three.r92.min.js"></script>
+    <script src="js/vanta.net.min.js"></script>
     <script>
+        /**VANTA.NET({
+            el: "#menu-container",
+            color: 0x3fe8ff,
+            backgroundColor: 0x000000,
+            points: 20.00
+        })*/
+    </script>
+    <script src="js/left-menu.js"></script>
+    <script>
+
+
+
         function vh(v) {
             var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
             return (v * h) / 100;
         }
         $(".draggable-menu-container").css("height",  $( ".draggable-menu" ).height());
-        $("#explain-page").css("height",  vh(99) - $( ".draggable-menu" ).height());
+        $("#explain-page").css("height",  vh(98) - $( ".draggable-menu" ).height());
+        $(".internal-menu").css("height", vh(100) - $( ".draggable-menu" ).height());
+        $(".internal-text").css("height",  vh(100) - $( ".draggable-menu" ).height());
+
 
         // init controller
-        var controller = new ScrollMagic.Controller({container: "#explain-page"});
+        var controller1 = new ScrollMagic.Controller({container: "#explain-page"});
 
         // build tween
         var tween = TweenMax.from("#animate", 1, {autoAlpha: 0, scale: 0.7});
@@ -492,26 +795,41 @@
         // build scene
         var scene = new ScrollMagic.Scene({triggerElement: "#ewod", duration: 2000, triggerHook: "onLeave"})
             .setTween(tween)
-            .addTo(controller);
+            .addTo(controller1);
 
         // change behaviour of controller to animate scroll instead of jump
-        controller.scrollTo(function (newpos) {
+        controller1.scrollTo(function (newpos) {
             TweenMax.to("#explain-page", 1, {scrollTo: {y: newpos}});
         });
 
-        /*$(".highlight-hover").hover(function() {
-            $(this).css("opacity", "1")}, function() {
-            $(this).css("opacity", "0.5")});*/
 
-        //  bind scroll to anchor links
-        $(document).on("click", "a[href^='#']", function (e) {
-            $('.highlight-stay').addClass('highlight-hover');
-            $('.highlight-stay').removeClass('highlight-stay');
+
+        var highlightMenuItem = function(addClass) {
+            var url = window.location
+
+            var menuItem = $('#title-menu a').filter(function() {
+                return this.href == url;
+            })
+
+            console.log(menuItem);
+        if (addClass) {
+            menuItem.addClass('active-menu');
+        } else {
+            menuItem.removeClass('active-menu')
+        }
+        }
+
+        $(document).ready(function () {
+            highlightMenuItem(true)
+        });
+
+        $(document).on("click", "#title-menu a[href^='#']", function (e) {
+            highlightMenuItem(false);
             var id = $(this).attr("href");
             if ($(id).length > 0) {
                 e.preventDefault();
                 // trigger scroll
-                controller.scrollTo(id);
+                controller1.scrollTo(id);
 
                 // if supported by the browser we can even update the URL.
                 if (window.history && window.history.pushState) {
@@ -519,11 +837,19 @@
                 }
             }
             $(this).promise().done(function() {
-                $(this).removeClass('highlight-hover');
-                $(this).addClass("highlight-stay");
+                highlightMenuItem(true)
             })
         });
 
+        /**var controller2 =  new ScrollMagic.Controller({container: "#ewod"});
+
+
+        var scene = new ScrollMagic.Scene({triggerElement: "#microchip", duration: 600})
+            .setPin("#microchip-img", {pushFollowers: false})
+            .addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+            .addTo(controller2);
+
+        console.log($("#microchip-img").outerHeight());*/
 
     </script>
 
